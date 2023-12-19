@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style-1.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <div class="container sign-up-mode">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Iniciar Sesión</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="number" placeholder="document" id="documentLogin" />
+            </div>
+            <input
+              type="submit"
+              value="Enviar"
+              class="btn solid"
+              id="successLogin"
+            />
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Registrarse</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" id="user" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" id="mail" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="number" placeholder="document" id="document" />
+            </div>
+            <input type="submit" class="btn" value="Enviar" id="success" />
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Bienvenidos !</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+              ex ratione. Aliquid!
+            </p>
+            <a href="./register.html">
+              <button class="btn transparent" id="sign-up-btn">
+                Sign up
+              </button>
+            </a>
+          </div>
+          <img src="https://www.posipediatalleresweb.com/wp-content/uploads/2023/04/persona-2.png" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              laboriosam ad deleniti.
+            </p>
+          </div>
+          <img src="Assets/huy.png" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

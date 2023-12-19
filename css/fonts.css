@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "GardeBook";
+    src: url("../Assets/GardeBook.otf");
+}
+
+@font-face {
+    font-family: "GardeBook-book";
+    src: url("../Assets/ITCAvantGardePro-Bk.otf");
+}
+
+@font-face {
+    font-family: "GardeBook-bold";
+    src: url("../Assets/ITCAvantGardeStd-Bold.otf");
+}

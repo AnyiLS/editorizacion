@@ -1,0 +1,12 @@
+:root {
+    --black-color: #000;
+    --blue-color: #09326b;
+    --gray-color: #ced6e0;
+    --white-color: #ffffff;
+    /* Font Families */
+    --gardenbook-bold: "GardeBook-bold";
+    --gardenbook-regular: "GardeBook-book";
+    --gardenbook-light: "GardeBook";
+    /* Max Widths */
+    --max-width: 800px;
+}

@@ -1,0 +1,352 @@
+@import "./variables.css";
+@import "./fonts.css";
+@import "./classes.css";
+@import "./svg-3.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+p, b, h1, h2, h3, h4, h5, label {
+  font-family: "Raleway", sans-serif;
+}
+
+
+
+body {
+  margin: 0;
+}
+
+.header-container {
+  max-width: 800px;
+  padding-top: 5px;
+  margin: 0 auto;
+}
+
+.elemento {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  background: #eb3b29;
+  color: var(--white-color);
+  font-size: 17px;
+  line-height: 2px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.elemento img {
+  padding-right: 10px;
+}
+
+.elemento p {
+  font-size: 22px;
+}
+
+.buttom-suce {
+  border-radius: 10px;
+  background-color: #1861ab;
+  color: white;
+  border: none;
+  padding: 7px 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .elemento {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+table {
+  max-width: 800px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  /* padding: 8px; */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    /* margin-bottom: 10px; */
+    display: block;
+    border: 1px solid #ddd;
+  }
+
+  table td {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    border-bottom: 1px dotted #ddd;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.custom-radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+.custom-radio input[type="checkbox"] + label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #00afe1;
+  cursor: pointer;
+}
+
+.content-checkbox {
+  width: 12px;
+  height: 12px;
+  background-color: #00afe1;
+  border-radius: 50%;
+  margin: 4px;
+  display: none;
+}
+
+.first-column {
+  font-family: "GardeBook-bold";
+  font-weight: 700;
+  color: #1f3765;
+  border: 1px solid #fff;
+}
+
+th:not(.first-column) {
+  border: 1px solid #fff;
+  background: #81d7f0;
+  font-family: "GardeBook-book";
+  width: 100px !important;
+  text-align: center;
+  color: #1f3765;
+}
+
+.second-bg {
+  background: #bfebf8;
+}
+
+.second-bg1 {
+  background: #00afe130;
+  font-family: "GardeBook-bold";
+  font-weight: 900;
+  color: #1f3765;
+}
+
+.first-bg {
+  background: #00afe130;
+}
+
+.first-bg3 {
+  background: #ced6e0;
+}
+
+.first-bg1 {
+  background: #bfebf8;
+}
+
+.first-bg2 {
+  background: #00afe130;
+}
+
+.score {
+  font-family: "GardeBook-book";
+  color: #1f3765;
+  font-size: 20px;
+  line-height: 15px;
+  padding-top: 14px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+}
+
+.score1 {
+  font-family: "GardeBook-book";
+  color: #1f3765;
+  font-size: 20px;
+  line-height: 15px;
+  padding-top: 14px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+}
+
+td {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.question {
+  color: #1f3765;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.numeros {
+  font-weight: 700;
+  color: #1f3765;
+  font-size: 10px;
+  font-family: "GardeBook-bold";
+}
+
+.first-bg-1 {
+  background: #99dff2;
+}
+
+.first-bg11 {
+  background: #bfebf8;
+}
+
+.first-bg12 {
+  background: #99dff2;
+}
+
+.second-bg10 {
+  background: #01aee1;
+  font-family: "GardeBook-bold";
+  font-weight: 900;
+  color: #fff;
+}
+
+.second-bg11 {
+  background: #08326b;
+  font-family: "GardeBook-bold";
+  font-weight: 900;
+  color: #fff;
+}
+
+.second-bg101 {
+  font-family: "GardeBook-bold";
+  font-weight: 900;
+  color: #000;
+}
+
+/* Checkbox Styles */
+.checkbox-container {
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+/* Scores Styles */
+#score-content-ipss,
+#score-content-subscore,
+#score-content-ipss-1 {
+  background: var(--white-color);
+}
+
+.text-ipss-total {
+  font-size: 20px;
+  line-height: 22px;
+  color: var(--white-color);
+  font-family: var(--gardenbook-light);
+  font-weight: 300;
+}
+
+/* Footer Styles */
+.footer-text {
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--blue-color);
+  margin: 0;
+  font-family: var(--gardenbook-light);
+  padding-top: 3px;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #323639;
+  padding: 10px 10px;
+  box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.50);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.radio-buttom {
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.radio-buttom span {
+  color: #fff;
+  font-size: 16px;
+}
+ 
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  appearance: none;
+  width: 0;
+  height: 0;
+}
+
+

@@ -34,7 +34,7 @@ document.getElementById("success").addEventListener("click", (e) => {
         formData.append("document", formControlRegister.document);
 
         // Realizar una solicitud GET a la API
-        fetch("https://api-editorizacion-dinamica-2.eml.com.co/api/auth/register", {
+        fetch("http://api-editorizacion-dinamica-2.eml.com.co/api/auth/register", {
           method: "POST",
           body: formData,
         })
@@ -70,7 +70,7 @@ document.getElementById("successLogin").addEventListener("click", (e) => {
       formData.append("document", formControlLogin.document);
 
       // Realizar una solicitud GET a la API
-      fetch("https://api-editorizacion-dinamica-2.eml.com.co/api/auth/login", {
+      fetch("http://api-editorizacion-dinamica-2.eml.com.co/api/auth/login", {
         method: "POST",
         body: formData,
       })

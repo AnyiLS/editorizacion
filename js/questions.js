@@ -41,7 +41,7 @@ document.getElementById('boton-1').addEventListener('click', () => {
     formData.append('question', questions);
     formData.append('response', responseQuestion1);
 
-    fetch('http://127.0.0.1:8000/api/auth/save-question', {
+    fetch('http://api-editorizacion-dinamica-2.eml.com.co/api/auth/save-question', {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${token}`
@@ -132,7 +132,7 @@ document.getElementById('boton-1-2').addEventListener('click', () => {
     formData.append('question', questions);
     formData.append('response', responseQuestion2);
 
-    fetch('http://127.0.0.1:8000/api/auth/save-question', {
+    fetch('http://api-editorizacion-dinamica-2.eml.com.co/api/auth/save-question', {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${token}`
@@ -222,7 +222,7 @@ document.getElementById('boton-1-3').addEventListener('click', () => {
     formData.append('question', questions);
     formData.append('response', responseQuestion3);
 
-    fetch('http://127.0.0.1:8000/api/auth/save-question', {
+    fetch('http://api-editorizacion-dinamica-2.eml.com.co/api/auth/save-question', {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${token}`
@@ -312,7 +312,7 @@ document.getElementById('boton-1-4').addEventListener('click', () => {
     formData.append('question', questions);
     formData.append('response', responseQuestion4);
 
-    fetch('http://127.0.0.1:8000/api/auth/save-question', {
+    fetch('http://api-editorizacion-dinamica-2.eml.com.co/api/auth/save-question', {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${token}`

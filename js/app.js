@@ -12,7 +12,7 @@ const container = document.querySelector(".container");
 
 document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
-  const myParam = urlParams.get("islogin");
+  const myParam = urlParams.get("isLogin");
   if(myParam  === 'true') {
     container.classList.remove("sign-up-mode");
   }

@@ -8,10 +8,9 @@ p, b, h1, h2, h3, h4, h5, label {
   font-family: "Raleway", sans-serif;
 }
 
-
-
 body {
   margin: 0;
+  background: #525659;
 }
 
 .header-container {
@@ -50,7 +49,12 @@ body {
   background-color: #1861ab;
   color: white;
   border: none;
-  padding: 7px 50px;
+  padding: 7px 50px; 
+  cursor: pointer;
+}
+
+.buttom-suce:hover {
+  background-color: #f5a11b;
 }
 
 @media only screen and (max-width: 767px) {
@@ -349,4 +353,98 @@ input[type="range"]::-webkit-slider-thumb {
   height: 0;
 }
 
+@media (max-width: 767px) {
+  table {
+    max-width: 100%;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  table:not(:first-child) > *,th,tr {
+    display: block !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+  }
 
+  table:not(:first-child) > td {
+    width: 95% !important;
+    text-align: left !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .header-img-2 {
+    width: 99vw !important;
+  }
+
+  table:not(:first-child) > td {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .text-1 {
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
+  }
+
+  .text-container {
+    padding-top: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    text-align: justify !important;
+  }
+
+  .footer {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    text-align: justify !important;
+  }
+
+  .footer-td {
+    padding-left: 20px !important;
+    padding-right: 0px !important;
+    width: 95% !important;
+  }
+
+  .footer p {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 94% !important;
+  }
+
+  .td-oficial {
+    width: 83% !important;
+    text-align: left;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    display: block !important;
+  }
+
+  .header-container {
+    max-width: 100%;
+  }
+
+  .logo-mobil {
+    width: 80px !important;
+  }
+
+  .boton-footer {
+    margin-bottom: 0px !important;
+  }
+
+  .logo-footer {
+    width: 90% !important;
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 20px !important;
+  }
+}

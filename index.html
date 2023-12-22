@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/media.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <title>Editorización - Dinamica</title>
     <link
@@ -8,11 +11,12 @@
       rel="stylesheet"
     />
   </head>
-  <body style="background: #525659">
+  <body>
     <!-- navbar -->
     <div class="header">
       <div class="header-right">
         <span style="color: #fff" class="material-icons"> menu </span>
+        <img src="Assets/LogoEML.svg" class="logo-mobil" style="width: 96px;" alt="">
         <p style="color: #fff">Editorización-Dinamica</p>
       </div>
       <span
@@ -27,11 +31,11 @@
 
     <div class="header-container">
       <!-- header -->
-      <table class="max-800" style="border: none">
+      <table class="max-800" style="border: none; box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);">
         <tbody>
           <tr>
-            <td colspan="10" style="border: none; background: #e73b2a">
-              <img src="./Assets/header.png" alt="Title" style="width: 100%" />
+            <td style="border: none; background: #e73b2a">
+              <img src="./Assets/header.png" class="header-img-2" alt="Title" style="width: 100%" />
             </td>
           </tr>
         </tbody>
@@ -715,10 +719,11 @@
       <!-- title -->
 
       <!-- columnas text -->
-      <table style="background: linear-gradient(to right, #fbfcfd, #c6d9ef)">
+      <table style="background: linear-gradient(to right, #fbfcfd, #c6d9ef); box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);">
         <tbody>
           <tr>
             <td
+            class="td-oficial"
               style="
                 width: 50%;
                 padding-right: 10px;
@@ -777,17 +782,17 @@
                     max-width: 100%;
                     width: 100%;
                     border-radius: 20px;
-                    border: 1px solid #1861ab;
-                    padding: 10px 0;
-                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-                      0 6px 6px rgba(0, 0, 0, 0.23);
+                    border: 3px solid #1861ab;
+                    padding: 6px 0;
+                    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
                   "
                 >
                   <p
                     style="
-                      color: #e73b2a;
+                      color: #f5a11b;
                       font-weight: bold;
                       text-align: center;
+                      font-size: 25px;
                     "
                   >
                     Question 1
@@ -796,7 +801,8 @@
                     style="
                       color: #1861ab;
                       font-weight: bold;
-                      padding-left: 20px;
+                      padding-left: 19px;
+                      padding-bottom: 15px;
                     "
                   >
                     ¿Qué niveles séricos de 25 hidroxicolecalciferol (25(OH)D)
@@ -807,7 +813,8 @@
                     style="
                       padding-left: 20px;
                       padding-bottom: 20px;
-                      color: #444747;
+                      color: #1861ab;
+                      font-weight: bold;
                     "
                   >
                     <div
@@ -816,19 +823,40 @@
                     >
                       <div class="radio-buttom" id="radio-buttom-a">
                         <div>
-                          <span class="material-icons" id="success-1" style="display: none;"> done </span>
+                          <span
+                            class="material-icons"
+                            id="success-1"
+                            style="display: none"
+                          >
+                            done
+                          </span>
                         </div>
-                        
                       </div>
                       <label for="" id="response">&lt; 20 ng/mL </label>
                     </div>
 
-
-                    <div style="display: none; align-items: center; gap: 10px;" id="rango-1">
-                      <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                        <div id="color-1" style="width: 50%; background: red; height: 10px;"></div>
+                    <div
+                      style="display: none; align-items: center; gap: 10px"
+                      id="rango-1"
+                    >
+                      <div
+                        style="
+                          width: 70%;
+                          height: 100%;
+                          border: 2px solid #1861ab;
+                          border-radius: 10px;
+                          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                            0 6px 6px rgba(0, 0, 0, 0.23);
+                        "
+                      >
+                        <div
+                          id="color-1"
+                          style="width: 50%; background: red; height: 10px"
+                        ></div>
                       </div>
-                      <p id="texto-1" style="color: #1861ab; font-weight: 800;">50%</p>
+                      <p id="texto-1" style="color: #1861ab; font-weight: 800">
+                        50%
+                      </p>
                     </div>
 
                     <!-- B -->
@@ -843,16 +871,39 @@
                     >
                       <div class="radio-buttom" id="radio-buttom-b">
                         <div>
-                          <span class="material-icons" id="error-1" style="display: none;"> clear </span>
+                          <span
+                            class="material-icons"
+                            id="error-1"
+                            style="display: none"
+                          >
+                            clear
+                          </span>
                         </div>
                       </div>
-                      <label for="">&lt; 20 ng/mL </label>
+                      <label for="">&lt; 30 ng/mL </label>
                     </div>
-                    <div style="display: none; align-items: center; gap: 10px;" id="rango-2">
-                      <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                        <div id="color-2" style="width: 50%; background: red; height: 10px;"></div>
+                    <div
+                      style="display: none; align-items: center; gap: 10px"
+                      id="rango-2"
+                    >
+                      <div
+                        style="
+                          width: 70%;
+                          height: 100%;
+                          border: 2px solid #1861ab;
+                          border-radius: 10px;
+                          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                            0 6px 6px rgba(0, 0, 0, 0.23);
+                        "
+                      >
+                        <div
+                          id="color-2"
+                          style="width: 50%; background: red; height: 10px"
+                        ></div>
                       </div>
-                      <p id="texto-2" style="color: #1861ab; font-weight: 800;">50%</p>
+                      <p id="texto-2" style="color: #1861ab; font-weight: 800">
+                        50%
+                      </p>
                     </div>
 
                     <!-- C -->
@@ -867,16 +918,39 @@
                     >
                       <div class="radio-buttom" id="radio-buttom-c">
                         <div>
-                          <span class="material-icons" id="error-2" style="display: none;"> clear </span>
+                          <span
+                            class="material-icons"
+                            id="error-2"
+                            style="display: none"
+                          >
+                            clear
+                          </span>
                         </div>
                       </div>
-                      <label for="">&lt; 20 ng/mL </label>
+                      <label for="">&lt; 40 ng/mL </label>
                     </div>
-                    <div style="display: none; align-items: center; gap: 10px;" id="rango-3">
-                      <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                        <div id="color-3" style="width: 50%; background: red; height: 10px;"></div>
+                    <div
+                      style="display: none; align-items: center; gap: 10px"
+                      id="rango-3"
+                    >
+                      <div
+                        style="
+                          width: 70%;
+                          height: 100%;
+                          border: 2px solid #1861ab;
+                          border-radius: 10px;
+                          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                            0 6px 6px rgba(0, 0, 0, 0.23);
+                        "
+                      >
+                        <div
+                          id="color-3"
+                          style="width: 50%; background: red; height: 10px"
+                        ></div>
                       </div>
-                      <p id="texto-3" style="color: #1861ab; font-weight: 800;">50%</p>
+                      <p id="texto-3" style="color: #1861ab; font-weight: 800">
+                        50%
+                      </p>
                     </div>
 
                     <!-- D -->
@@ -891,19 +965,41 @@
                     >
                       <div class="radio-buttom" id="radio-buttom-d">
                         <div>
-                          <span class="material-icons" id="error-3" style="display: none;"> clear </span>
+                          <span
+                            class="material-icons"
+                            id="error-3"
+                            style="display: none"
+                          >
+                            clear
+                          </span>
                         </div>
                       </div>
-                      <label for="">&lt; 20 ng/mL </label>
+                      <label for="">&lt; Ninguna de las anteriores </label>
                     </div>
-                    <div style="display: none; align-items: center; gap: 10px;" id="rango-4">
-                      <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                        <div id="color-4" style="width: 50%; background: red; height: 10px;"></div>
+                    <div
+                      style="display: none; align-items: center; gap: 10px"
+                      id="rango-4"
+                    >
+                      <div
+                        style="
+                          width: 70%;
+                          height: 100%;
+                          border: 2px solid #1861ab;
+                          border-radius: 10px;
+                          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                            0 6px 6px rgba(0, 0, 0, 0.23);
+                        "
+                      >
+                        <div
+                          id="color-4"
+                          style="width: 50%; background: red; height: 10px"
+                        ></div>
                       </div>
-                      <p id="texto-4" style="color: #1861ab; font-weight: 800;">50%</p>
+                      <p id="texto-4" style="color: #1861ab; font-weight: 800">
+                        50%
+                      </p>
                     </div>
                   </div>
-                  
 
                   <div
                     style="
@@ -1028,6 +1124,7 @@
 
             <!-- columna 2 -->
             <td
+            class="td-oficial"
               style="
                 width: 50%;
                 padding-left: 10px;
@@ -1069,20 +1166,23 @@
                   max-width: 100%;
                   width: 100%;
                   border-radius: 20px;
-                  border: 1px solid #1861ab;
-                  padding: 10px 0px;
+                  border: 3px solid #1861ab;
+                  padding: 6px 0px;
                   margin-top: 10px;
-                  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-                    0 6px 6px rgba(0, 0, 0, 0.23);
+                  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
                 "
               >
                 <p
-                  style="color: #e73b2a; font-weight: bold; text-align: center"
+                  style="
+                  color: #f5a11b;
+                  font-weight: bold;
+                  text-align: center;
+                  font-size: 25px;"
                 >
                   Question 2
                 </p>
                 <p
-                  style="color: #1861ab; font-weight: bold; padding-left: 20px"
+                  style="color: #1861ab; font-weight: bold; padding-left: 20px; padding-bottom: 15px;"
                 >
                   ¿Qué grupo etario se ve favorecido por la vitamina D y por
                   qué?
@@ -1092,7 +1192,8 @@
                   style="
                     padding-left: 20px;
                     padding-bottom: 20px;
-                    color: #444747;
+                    color: #1861ab;
+                    font-weight: bold;
                   "
                 >
                   <div
@@ -1101,21 +1202,43 @@
                   >
                     <div class="radio-buttom" id="radio-buttom-a-2">
                       <div>
-                        <span class="material-icons" id="error-2-2" style="display: none;"> clear </span>
+                        <span
+                          class="material-icons"
+                          id="error-2-2"
+                          style="display: none"
+                        >
+                          clear
+                        </span>
                       </div>
                     </div>
-                    <label for="" id="response">Las mujeres, por las gonadotropinas </label>
+                    <label for="" id="response"
+                      >Las mujeres, por las gonadotropinas
+                    </label>
                   </div>
 
-                  <div style="display: none; align-items: center; gap: 10px;" id="rango-3-2">
-                    <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                      <div id="color-3-2" style="width: 50%; background: red; height: 10px;"></div>
+                  <div
+                    style="display: none; align-items: center; gap: 10px"
+                    id="rango-3-2"
+                  >
+                    <div
+                      style="
+                        width: 70%;
+                        height: 100%;
+                        border: 1px solid #1861ab;
+                        border-radius: 10px;
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                          0 6px 6px rgba(0, 0, 0, 0.23);
+                      "
+                    >
+                      <div
+                        id="color-3-2"
+                        style="width: 50%; background: red; height: 10px"
+                      ></div>
                     </div>
-                    <p id="texto-3-2" style="color: #1861ab; font-weight: 800;">50%</p>
+                    <p id="texto-3-2" style="color: #1861ab; font-weight: 800">
+                      50%
+                    </p>
                   </div>
-                  
-                  
-
 
                   <!-- B -->
                   <div
@@ -1129,16 +1252,39 @@
                   >
                     <div class="radio-buttom" id="radio-buttom-b-2">
                       <div>
-                        <span class="material-icons" id="error-1-2" style="display: none;"> clear </span>
+                        <span
+                          class="material-icons"
+                          id="error-1-2"
+                          style="display: none"
+                        >
+                          clear
+                        </span>
                       </div>
                     </div>
                     <label for="">Los hombres, por la testosterona </label>
                   </div>
-                  <div style="display: none; align-items: center; gap: 10px;" id="rango-2-2">
-                    <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                      <div id="color-2-2" style="width: 50%; background: red; height: 10px;"></div>
+                  <div
+                    style="display: none; align-items: center; gap: 10px"
+                    id="rango-2-2"
+                  >
+                    <div
+                      style="
+                        width: 70%;
+                        height: 100%;
+                        border: 1px solid #1861ab;
+                        border-radius: 10px;
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                          0 6px 6px rgba(0, 0, 0, 0.23);
+                      "
+                    >
+                      <div
+                        id="color-2-2"
+                        style="width: 50%; background: red; height: 10px"
+                      ></div>
                     </div>
-                    <p id="texto-2-2" style="color: #1861ab; font-weight: 800;">50%</p>
+                    <p id="texto-2-2" style="color: #1861ab; font-weight: 800">
+                      50%
+                    </p>
                   </div>
 
                   <!-- C -->
@@ -1153,16 +1299,40 @@
                   >
                     <div class="radio-buttom" id="radio-buttom-c-2">
                       <div>
-                        <span class="material-icons" id="success-1-2"  style="display: none;"> done </span>
+                        <span
+                          class="material-icons"
+                          id="success-1-2"
+                          style="display: none"
+                        >
+                          done
+                        </span>
                       </div>
                     </div>
                     <label for="">Las mujeres, por los estrógenos </label>
                   </div>
-                  <div style="display: none; align-items: center; gap: 10px;" id="rango-1-2">
-                    <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                      <div id="color-1-2" style="width: 50%; background: red; height: 10px;"></div>
+                  <div
+                    style="display: none; align-items: center; gap: 10px"
+                    id="rango-1-2"
+                  >
+                    <div
+                      style="
+                        width: 70%;
+                        height: 100%;
+                        border: 1px solid #1861ab;
+                        border-radius: 10px;
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                          0 6px 6px rgba(0, 0, 0, 0.23);
+                      "
+                    >
+                      <div
+                        id="color-1-2"
+                        style="width: 50%; background: red; height: 10px"
+                      ></div>
                     </div>
-                    <p id="texto-1-2" style="color: #1861ab; font-weight: 800;"></p>
+                    <p
+                      id="texto-1-2"
+                      style="color: #1861ab; font-weight: 800"
+                    ></p>
                   </div>
 
                   <!-- D -->
@@ -1177,16 +1347,39 @@
                   >
                     <div class="radio-buttom" id="radio-buttom-d-2">
                       <div>
-                        <span class="material-icons" id="error-3-2" style="display: none;"> done </span>
+                        <span
+                          class="material-icons"
+                          id="error-3-2"
+                          style="display: none"
+                        >
+                          done
+                        </span>
                       </div>
                     </div>
                     <label for="">Los hombres, por la androsterona </label>
                   </div>
-                  <div style="display: none; align-items: center; gap: 10px;" id="rango-4-2">
-                    <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                      <div id="color-4-2" style="width: 50%; background: red; height: 10px;"></div>
+                  <div
+                    style="display: none; align-items: center; gap: 10px"
+                    id="rango-4-2"
+                  >
+                    <div
+                      style="
+                        width: 70%;
+                        height: 100%;
+                        border: 1px solid #1861ab;
+                        border-radius: 10px;
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                          0 6px 6px rgba(0, 0, 0, 0.23);
+                      "
+                    >
+                      <div
+                        id="color-4-2"
+                        style="width: 50%; background: red; height: 10px"
+                      ></div>
                     </div>
-                    <p id="texto-4-2" style="color: #1861ab; font-weight: 800;">50%</p>
+                    <p id="texto-4-2" style="color: #1861ab; font-weight: 800">
+                      50%
+                    </p>
                   </div>
                 </div>
 
@@ -1256,20 +1449,22 @@
                   max-width: 100%;
                   width: 100%;
                   border-radius: 20px;
-                  border: 1px solid #1861ab;
-                  padding: 10px 0px;
+                  border: 3px solid #1861ab;
+                  padding: 6px 0px;
                   margin-top: 10px;
-                  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-                    0 6px 6px rgba(0, 0, 0, 0.23);
+                  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
                 "
               >
                 <p
-                  style="color: #e73b2a; font-weight: bold; text-align: center"
+                  style="color: #f5a11b;
+                  font-weight: bold;
+                  text-align: center;
+                  font-size: 25px;"
                 >
                   Question 3
                 </p>
                 <p
-                  style="color: #1861ab; font-weight: bold; padding-left: 20px"
+                  style="color: #1861ab; font-weight: bold; padding-left: 20px; padding-bottom: 15px;"
                 >
                   Los pacientes de la tercera edad con deficiencia de vitamina D
                   son especialmente vulnerables a desarrollar:
@@ -1279,7 +1474,8 @@
                   style="
                     padding-left: 20px;
                     padding-bottom: 20px;
-                    color: #444747;
+                    color: #1861ab;
+                    font-weight: bold;
                   "
                 >
                   <div
@@ -1288,18 +1484,40 @@
                   >
                     <div class="radio-buttom" id="radio-buttom-a-3">
                       <div>
-                        <span class="material-icons" id="success-1-3" style="display: none;"> clear </span>
+                        <span
+                          class="material-icons"
+                          id="success-1-3"
+                          style="display: none"
+                        >
+                          clear
+                        </span>
                       </div>
                     </div>
                     <label for="">Enfermedades autoinmunes </label>
                   </div>
-                  <div style="display: none; align-items: center; gap: 10px;" id="rango-3-3">
-                    <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                      <div id="color-3-3" style="width: 50%; background: red; height: 10px;"></div>
+                  <div
+                    style="display: none; align-items: center; gap: 10px"
+                    id="rango-3-3"
+                  >
+                    <div
+                      style="
+                        width: 70%;
+                        height: 100%;
+                        border: 1px solid #1861ab;
+                        border-radius: 10px;
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                          0 6px 6px rgba(0, 0, 0, 0.23);
+                      "
+                    >
+                      <div
+                        id="color-3-3"
+                        style="width: 50%; background: red; height: 10px"
+                      ></div>
                     </div>
-                    <p id="texto-3-3" style="color: #1861ab; font-weight: 800;">50%</p>
+                    <p id="texto-3-3" style="color: #1861ab; font-weight: 800">
+                      50%
+                    </p>
                   </div>
-                  
 
                   <!-- B -->
                   <div
@@ -1313,16 +1531,39 @@
                   >
                     <div class="radio-buttom" id="radio-buttom-b-3">
                       <div>
-                        <span class="material-icons" id="error-1-3" style="display: none;"> clear </span>
+                        <span
+                          class="material-icons"
+                          id="error-1-3"
+                          style="display: none"
+                        >
+                          clear
+                        </span>
                       </div>
                     </div>
                     <label for="">Enfermedades musculoesqueléticas </label>
                   </div>
-                  <div style="display: none; align-items: center; gap: 10px;" id="rango-2-3">
-                    <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                      <div id="color-2-3" style="width: 50%; background: red; height: 10px;"></div>
+                  <div
+                    style="display: none; align-items: center; gap: 10px"
+                    id="rango-2-3"
+                  >
+                    <div
+                      style="
+                        width: 70%;
+                        height: 100%;
+                        border: 1px solid #1861ab;
+                        border-radius: 10px;
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                          0 6px 6px rgba(0, 0, 0, 0.23);
+                      "
+                    >
+                      <div
+                        id="color-2-3"
+                        style="width: 50%; background: red; height: 10px"
+                      ></div>
                     </div>
-                    <p id="texto-2-3" style="color: #1861ab; font-weight: 800;">50%</p>
+                    <p id="texto-2-3" style="color: #1861ab; font-weight: 800">
+                      50%
+                    </p>
                   </div>
 
                   <!-- C -->
@@ -1337,18 +1578,40 @@
                   >
                     <div class="radio-buttom" id="radio-buttom-c-3">
                       <div>
-                        <span class="material-icons" id="error-2-3" style="display: none;"> clear </span>
+                        <span
+                          class="material-icons"
+                          id="error-2-3"
+                          style="display: none"
+                        >
+                          clear
+                        </span>
                       </div>
                     </div>
                     <label for="">Demencia</label>
                   </div>
-                  <div style="display: none; align-items: center; gap: 10px;" id="rango-4-3">
-                    <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                      <div id="color-4-3" style="width: 50%; background: red; height: 10px;"></div>
+                  <div
+                    style="display: none; align-items: center; gap: 10px"
+                    id="rango-4-3"
+                  >
+                    <div
+                      style="
+                        width: 70%;
+                        height: 100%;
+                        border: 1px solid #1861ab;
+                        border-radius: 10px;
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                          0 6px 6px rgba(0, 0, 0, 0.23);
+                      "
+                    >
+                      <div
+                        id="color-4-3"
+                        style="width: 50%; background: red; height: 10px"
+                      ></div>
                     </div>
-                    <p id="texto-4-3" style="color: #1861ab; font-weight: 800;">50%</p>
+                    <p id="texto-4-3" style="color: #1861ab; font-weight: 800">
+                      50%
+                    </p>
                   </div>
-                  
 
                   <!-- D -->
                   <div
@@ -1362,18 +1625,40 @@
                   >
                     <div class="radio-buttom" id="radio-buttom-d-3">
                       <div>
-                        <span class="material-icons" id="error-3-3" style="display: none;"> done </span>
+                        <span
+                          class="material-icons"
+                          id="error-3-3"
+                          style="display: none"
+                        >
+                          done
+                        </span>
                       </div>
                     </div>
                     <label for="">Todas las anteriores </label>
                   </div>
-                  <div style="display: none; align-items: center; gap: 10px;" id="rango-1-3">
-                    <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                      <div id="color-1-3" style="width: 50%; background: red; height: 10px;"></div>
+                  <div
+                    style="display: none; align-items: center; gap: 10px"
+                    id="rango-1-3"
+                  >
+                    <div
+                      style="
+                        width: 70%;
+                        height: 100%;
+                        border: 1px solid #1861ab;
+                        border-radius: 10px;
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                          0 6px 6px rgba(0, 0, 0, 0.23);
+                      "
+                    >
+                      <div
+                        id="color-1-3"
+                        style="width: 50%; background: red; height: 10px"
+                      ></div>
                     </div>
-                    <p id="texto-1-3" style="color: #1861ab; font-weight: 800;">50%</p>
+                    <p id="texto-1-3" style="color: #1861ab; font-weight: 800">
+                      50%
+                    </p>
                   </div>
-                  
                 </div>
 
                 <div
@@ -1383,7 +1668,7 @@
                     align-items: center;
                     padding-bottom: 10px;
                   "
-                   id="boton-1-3"
+                  id="boton-1-3"
                 >
                   <button class="buttom-suce">Enviar</button>
                 </div>
@@ -1475,10 +1760,11 @@
       <!-- raya 1 -->
 
       <!-- columnas text 2 -->
-      <table style="background: linear-gradient(to right, #fbfcfd, #c6d9ef)">
+      <table style="background: linear-gradient(to right, #fbfcfd, #c6d9ef); box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);">
         <tbody>
           <tr>
             <td
+            class="td-oficial"
               style="
                 width: 50%;
                 padding-right: 10px;
@@ -1636,6 +1922,7 @@
 
             <!-- columna 2 -->
             <td
+            class="td-oficial"
               style="
                 width: 50%;
                 padding-left: 10px;
@@ -1718,10 +2005,11 @@
       <!-- raya 2 -->
 
       <!-- columnas text 3 -->
-      <table style="background: linear-gradient(to right, #fbfcfd, #c6d9ef)">
+      <table style="background: linear-gradient(to right, #fbfcfd, #c6d9ef); box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);">
         <tbody>
           <tr>
             <td
+              class="td-oficial"
               style="
                 width: 50%;
                 padding-right: 10px;
@@ -1781,17 +2069,17 @@
                     max-width: 100%;
                     width: 100%;
                     border-radius: 20px;
-                    border: 1px solid #1861ab;
+                    border: 3px solid #1861ab;
                     padding: 10px 0;
-                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-                      0 6px 6px rgba(0, 0, 0, 0.23);
+                    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
                   "
                 >
                   <p
                     style="
-                      color: #e73b2a;
+                      color: #f5a11b;
                       font-weight: bold;
                       text-align: center;
+                      font-size: 25px;
                     "
                   >
                     Question 4
@@ -1800,7 +2088,8 @@
                     style="
                       color: #1861ab;
                       font-weight: bold;
-                      padding-left: 20px;
+                      padding-left: 15px;
+                      padding-bottom: 15px;
                     "
                   >
                     ¿Para qué sirve la profilaxis con vitamina D?
@@ -1810,7 +2099,8 @@
                     style="
                       padding-left: 20px;
                       padding-bottom: 20px;
-                      color: #444747;
+                      color: #1861ab;
+                      font-weight: bold;
                     "
                   >
                     <div
@@ -1819,19 +2109,43 @@
                     >
                       <div class="radio-buttom" id="radio-buttom-a-4">
                         <div>
-                          <span class="material-icons" id="success-1-4" style="display: none;"> clear </span>
+                          <span
+                            class="material-icons"
+                            id="success-1-4"
+                            style="display: none"
+                          >
+                            clear
+                          </span>
                         </div>
                       </div>
                       <label for="">Prevenir enfermedades neurológicas </label>
                     </div>
-                    <div style="display: none; align-items: center; gap: 10px;" id="rango-3-4">
-                      <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                        <div id="color-3-4" style="width: 50%; background: red; height: 10px;"></div>
+                    <div
+                      style="display: none; align-items: center; gap: 10px"
+                      id="rango-3-4"
+                    >
+                      <div
+                        style="
+                          width: 70%;
+                          height: 100%;
+                          border: 1px solid #1861ab;
+                          border-radius: 10px;
+                          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                            0 6px 6px rgba(0, 0, 0, 0.23);
+                        "
+                      >
+                        <div
+                          id="color-3-4"
+                          style="width: 50%; background: red; height: 10px"
+                        ></div>
                       </div>
-                      <p id="texto-3-4" style="color: #1861ab; font-weight: 800;">50%</p>
+                      <p
+                        id="texto-3-4"
+                        style="color: #1861ab; font-weight: 800"
+                      >
+                        50%
+                      </p>
                     </div>
-
-                    
 
                     <!-- B -->
                     <div
@@ -1845,19 +2159,43 @@
                     >
                       <div class="radio-buttom" id="radio-buttom-b-4">
                         <div>
-                          <span class="material-icons" id="error-1-4" style="display: none;"> done </span>
+                          <span
+                            class="material-icons"
+                            id="error-1-4"
+                            style="display: none"
+                          >
+                            done
+                          </span>
                         </div>
                       </div>
                       <label for="">Prevenir enfermedades autoinmunes </label>
                     </div>
-                    <div style="display: none; align-items: center; gap: 10px;" id="rango-1-4">
-                      <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                        <div id="color-1-4" style="width: 50%; background: red; height: 10px;"></div>
+                    <div
+                      style="display: none; align-items: center; gap: 10px"
+                      id="rango-1-4"
+                    >
+                      <div
+                        style="
+                          width: 70%;
+                          height: 100%;
+                          border: 1px solid #1861ab;
+                          border-radius: 10px;
+                          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                            0 6px 6px rgba(0, 0, 0, 0.23);
+                        "
+                      >
+                        <div
+                          id="color-1-4"
+                          style="width: 50%; background: red; height: 10px"
+                        ></div>
                       </div>
-                      <p id="texto-1-4" style="color: #1861ab; font-weight: 800;">50%</p>
+                      <p
+                        id="texto-1-4"
+                        style="color: #1861ab; font-weight: 800"
+                      >
+                        50%
+                      </p>
                     </div>
-
-                    
 
                     <!-- C -->
                     <div
@@ -1871,18 +2209,43 @@
                     >
                       <div class="radio-buttom" id="radio-buttom-c-4">
                         <div>
-                          <span class="material-icons" id="error-2-4" style="display: none;"> clear </span>
+                          <span
+                            class="material-icons"
+                            id="error-2-4"
+                            style="display: none"
+                          >
+                            clear
+                          </span>
                         </div>
                       </div>
                       <label for="">Prevenir enfermedades psiquiátricas</label>
                     </div>
-                    <div style="display: none; align-items: center; gap: 10px;" id="rango-4-4">
-                      <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                        <div id="color-4-4" style="width: 50%; background: red; height: 10px;"></div>
+                    <div
+                      style="display: none; align-items: center; gap: 10px"
+                      id="rango-4-4"
+                    >
+                      <div
+                        style="
+                          width: 70%;
+                          height: 100%;
+                          border: 1px solid #1861ab;
+                          border-radius: 10px;
+                          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                            0 6px 6px rgba(0, 0, 0, 0.23);
+                        "
+                      >
+                        <div
+                          id="color-4-4"
+                          style="width: 50%; background: red; height: 10px"
+                        ></div>
                       </div>
-                      <p id="texto-4-4" style="color: #1861ab; font-weight: 800;">50%</p>
+                      <p
+                        id="texto-4-4"
+                        style="color: #1861ab; font-weight: 800"
+                      >
+                        50%
+                      </p>
                     </div>
-                    
 
                     <!-- D -->
                     <div
@@ -1896,19 +2259,43 @@
                     >
                       <div class="radio-buttom" id="radio-buttom-d-4">
                         <div>
-                          <span class="material-icons" id="error-3-4" style="display: none;"> clear </span>
+                          <span
+                            class="material-icons"
+                            id="error-3-4"
+                            style="display: none"
+                          >
+                            clear
+                          </span>
                         </div>
                       </div>
                       <label for="">Ninguna de las anteriores </label>
                     </div>
-                    <div style="display: none; align-items: center; gap: 10px;" id="rango-2-4">
-                      <div style="width: 70%; height: 100%; border: 1px  solid #1861ab; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);">
-                        <div id="color-2-4" style="width: 50%; background: red; height: 10px;"></div>
+                    <div
+                      style="display: none; align-items: center; gap: 10px"
+                      id="rango-2-4"
+                    >
+                      <div
+                        style="
+                          width: 70%;
+                          height: 100%;
+                          border: 1px solid #1861ab;
+                          border-radius: 10px;
+                          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                            0 6px 6px rgba(0, 0, 0, 0.23);
+                        "
+                      >
+                        <div
+                          id="color-2-4"
+                          style="width: 50%; background: red; height: 10px"
+                        ></div>
                       </div>
-                      <p id="texto-2-4" style="color: #1861ab; font-weight: 800;">50%</p>
+                      <p
+                        id="texto-2-4"
+                        style="color: #1861ab; font-weight: 800"
+                      >
+                        50%
+                      </p>
                     </div>
-
-                    
                   </div>
 
                   <div
@@ -1933,6 +2320,7 @@
 
             <!-- columna 2 -->
             <td
+            class="td-oficial"
               style="
                 width: 50%;
                 padding-left: 10px;
@@ -1999,7 +2387,7 @@
       <!-- columnas text 3 -->
 
       <!-- footer -->
-      <div style="background: #e73b2a; padding: 20px 70px; font-size: 10px">
+      <div style="background: #e73b2a; padding: 20px 70px; font-size: 10px;" class="text-container">
         <b style="color: #fff; font-size: 15px">Referencias:</b> <br />
         <p style="color: #fad0cc; line-height: 1; text-align: justify">
           <b style="color: #fff">1.</b> Lemke D, Klement RJ, Schweiger F,
@@ -2020,14 +2408,16 @@
           M, Guzmán R, Martínez JI et al. Vitamina D. Consenso colombiano de
           expertos. Med [Internet]. Abril - junio de 2017 [citado el 14 de
           septiembre de 2022];39(2). Disponible en:
-          <a
+          
+          <p
+            class="text-1"
             style="color: #fad0cc; text-decoration: none"
             target="_blank"
             href="http://www.aapec.org/images/Consenso_Colombiano_Vitamina_D.pdf"
             >http://www.aapec.org/images/Consenso_Colombiano_Vitamina_D.pdf</a
           >
 
-          <b style="color: #fff">5.</b> Wiśniewska A, Szypowska A. The role of
+          <b style="color: #fff">5.</b>Wiśniewska A, Szypowska A. The role of
           vitamin D in selected autoimmune diseases. Rocz Panstw Zakl Hig.
           2021;72(2):111-121.
 
@@ -2074,10 +2464,11 @@
       <!-- footer -->
 
       <!-- columnas text 4 foooter -->
-      <table style="background: #e73b2a; margin-bottom: 15px">
+      <table class="boton-footer" style="background: #e73b2a; margin-bottom: 15px;">
         <tbody>
           <tr>
             <td
+            class="footer-td"
               style="
                 width: 60%;
                 padding-right: 10px;
@@ -2086,7 +2477,7 @@
                 border: none;
               "
             >
-              <div style="max-width: 100%; width: 100%">
+              <div style="max-width: 100%; width: 100%" class="footer">
                 <p
                   style="
                     color: #fad0cc;
@@ -2131,6 +2522,7 @@
             >
               <div style="max-width: 100%; width: 100%; margin-top: 10px">
                 <img
+                class="logo-footer"
                   src="./Assets/footer.png"
                   style="width: 70%; padding-left: 43px; padding-top: 28px"
                   alt=""

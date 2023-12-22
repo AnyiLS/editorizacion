@@ -50,10 +50,10 @@ document.getElementById('boton-1').addEventListener('click', () => {
     })
     .then(response => response.json())
     .then(data => {
-        document.getElementById('radio-buttom-a').style.background = "green";
-        document.getElementById('radio-buttom-b').style.background = responseQuestion1 === 'B' ? "red" : "gray";
-        document.getElementById('radio-buttom-c').style.background = responseQuestion1 === 'C' ? "red" : "gray";
-        document.getElementById('radio-buttom-d').style.background = responseQuestion1 === 'D' ? "red" : "gray";
+        document.getElementById('radio-buttom-a').style.background = "#1861ab";
+        document.getElementById('radio-buttom-b').style.background = responseQuestion1 === 'B' ? "#f5a11b" : "#80808075";
+        document.getElementById('radio-buttom-c').style.background = responseQuestion1 === 'C' ? "#f5a11b" : "#80808075";
+        document.getElementById('radio-buttom-d').style.background = responseQuestion1 === 'D' ? "#f5a11b" : "#80808075";
 
         document.getElementById('success-1').style.display = "block";
         document.getElementById('error-1').style.display = "block";
@@ -61,22 +61,22 @@ document.getElementById('boton-1').addEventListener('click', () => {
         document.getElementById('error-3').style.display = "block";
 
         document.getElementById('rango-1').style.display = "flex";
-        document.getElementById('color-1').style.background = "green";
+        document.getElementById('color-1').style.background = "#1861ab";
         document.getElementById('color-1').style.width = `${data.data.a.toFixed(2)}%`;
         document.getElementById('texto-1').innerText = `${data.data.a.toFixed(2)}%`;
 
         document.getElementById('rango-2').style.display = "flex";
-        document.getElementById('color-2').style.background = responseQuestion1 === 'B' ? "red" : "gray";
+        document.getElementById('color-2').style.background = responseQuestion1 === 'B' ? "#f5a11b" : "#80808075";
         document.getElementById('color-2').style.width = `${data.data.b.toFixed(2)}%`;
         document.getElementById('texto-2').innerText = `${data.data.b.toFixed(2)}%`;
 
         document.getElementById('rango-3').style.display = "flex";
-        document.getElementById('color-3').style.background = responseQuestion1 === 'C' ? "red" : "gray";
+        document.getElementById('color-3').style.background = responseQuestion1 === 'C' ? "#f5a11b" : "#80808075";
         document.getElementById('color-3').style.width = `${data.data.c.toFixed(2)}%`;
         document.getElementById('texto-3').innerText = `${data.data.c.toFixed(2)}%`;
 
         document.getElementById('rango-4').style.display = "flex";
-        document.getElementById('color-4').style.background = responseQuestion1 === 'D' ? "red" : "gray";
+        document.getElementById('color-4').style.background = responseQuestion1 === 'D' ? "#f5a11b" : "#80808075";
         document.getElementById('color-4').style.width = `${data.data.d.toFixed(2)}%`;
         document.getElementById('texto-4').innerText = `${data.data.d.toFixed(2)}%`;
 
@@ -141,10 +141,10 @@ document.getElementById('boton-1-2').addEventListener('click', () => {
     })
     .then(response => response.json())
     .then(data => {
-        document.getElementById('radio-buttom-c-2').style.background = "green";
-        document.getElementById('radio-buttom-b-2').style.background = responseQuestion2 === 'B' ? "red" : "gray";
-        document.getElementById('radio-buttom-a-2').style.background = responseQuestion2 === 'A' ? "red" : "gray";
-        document.getElementById('radio-buttom-d-2').style.background = responseQuestion2 === 'D' ? "red" : "gray";
+        document.getElementById('radio-buttom-c-2').style.background = "#1861ab";
+        document.getElementById('radio-buttom-b-2').style.background = responseQuestion2 === 'B' ? "#f5a11b" : "#80808075";
+        document.getElementById('radio-buttom-a-2').style.background = responseQuestion2 === 'A' ? "#f5a11b" : "#80808075";
+        document.getElementById('radio-buttom-d-2').style.background = responseQuestion2 === 'D' ? "#f5a11b" : "#80808075";
 
         document.getElementById('success-1-2').style.display = "block";
         document.getElementById('error-1-2').style.display = "block";
@@ -152,22 +152,22 @@ document.getElementById('boton-1-2').addEventListener('click', () => {
         document.getElementById('error-3-2').style.display = "block";
 
         document.getElementById('rango-1-2').style.display = "flex";
-        document.getElementById('color-1-2').style.background = "green";
+        document.getElementById('color-1-2').style.background = "#1861ab";
         document.getElementById('color-1-2').style.width = `${data.data.c.toFixed(2)}%`;
         document.getElementById('texto-1-2').innerText = `${data.data.c.toFixed(2)}%`;
 
         document.getElementById('rango-2-2').style.display = "flex";
-        document.getElementById('color-2-2').style.background = responseQuestion2 === 'B' ? "red" : "gray";
+        document.getElementById('color-2-2').style.background = responseQuestion2 === 'B' ? "#f5a11b" : "#80808075";
         document.getElementById('color-2-2').style.width = `${data.data.b.toFixed(2)}%`;
         document.getElementById('texto-2-2').innerText = `${data.data.b.toFixed(2)}%`;
 
         document.getElementById('rango-3-2').style.display = "flex";
-        document.getElementById('color-3-2').style.background = responseQuestion2 === 'A' ? "red" : "gray";
+        document.getElementById('color-3-2').style.background = responseQuestion2 === 'A' ? "#f5a11b" : "#80808075";
         document.getElementById('color-3-2').style.width = `${data.data.a.toFixed(2)}%`;
         document.getElementById('texto-3-2').innerText = `${data.data.a.toFixed(2)}%`;
 
         document.getElementById('rango-4-2').style.display = "flex";
-        document.getElementById('color-4-2').style.background = responseQuestion2 === 'D' ? "red" : "gray";
+        document.getElementById('color-4-2').style.background = responseQuestion2 === 'D' ? "#f5a11b" : "#80808075";
         document.getElementById('color-4-2').style.width = `${data.data.d.toFixed(2)}%`;
         document.getElementById('texto-4-2').innerText = `${data.data.d.toFixed(2)}%`;
 
@@ -231,10 +231,10 @@ document.getElementById('boton-1-3').addEventListener('click', () => {
     })
     .then(response => response.json())
     .then(data => {
-        document.getElementById('radio-buttom-d-3').style.background = "green";
-        document.getElementById('radio-buttom-b-3').style.background = responseQuestion3 === 'B' ? "red" : "gray";
-        document.getElementById('radio-buttom-a-3').style.background = responseQuestion3 === 'A' ? "red" : "gray";
-        document.getElementById('radio-buttom-c-3').style.background = responseQuestion3 === 'C' ? "red" : "gray";
+        document.getElementById('radio-buttom-d-3').style.background = "#1861ab";
+        document.getElementById('radio-buttom-b-3').style.background = responseQuestion3 === 'B' ? "#f5a11b" : "#80808075";
+        document.getElementById('radio-buttom-a-3').style.background = responseQuestion3 === 'A' ? "#f5a11b" : "#80808075";
+        document.getElementById('radio-buttom-c-3').style.background = responseQuestion3 === 'C' ? "#f5a11b" : "#80808075";
 
         document.getElementById('success-1-3').style.display = "block";
         document.getElementById('error-1-3').style.display = "block";
@@ -242,22 +242,22 @@ document.getElementById('boton-1-3').addEventListener('click', () => {
         document.getElementById('error-3-3').style.display = "block";
 
         document.getElementById('rango-1-3').style.display = "flex";
-        document.getElementById('color-1-3').style.background = "green";
+        document.getElementById('color-1-3').style.background = "#1861ab";
         document.getElementById('color-1-3').style.width = `${data.data.d.toFixed(2)}%`;
         document.getElementById('texto-1-3').innerText = `${data.data.d.toFixed(2)}%`;
 
         document.getElementById('rango-2-3').style.display = "flex";
-        document.getElementById('color-2-3').style.background = responseQuestion3 === 'B' ? "red" : "gray";
+        document.getElementById('color-2-3').style.background = responseQuestion3 === 'B' ? "#f5a11b" : "#80808075";
         document.getElementById('color-2-3').style.width = `${data.data.b.toFixed(2)}%`;
         document.getElementById('texto-2-3').innerText = `${data.data.b.toFixed(2)}%`;
 
         document.getElementById('rango-3-3').style.display = "flex";
-        document.getElementById('color-3-3').style.background = responseQuestion3 === 'A' ? "red" : "gray";
+        document.getElementById('color-3-3').style.background = responseQuestion3 === 'A' ? "#f5a11b" : "#80808075";
         document.getElementById('color-3-3').style.width = `${data.data.a.toFixed(2)}%`;
         document.getElementById('texto-3-3').innerText = `${data.data.a.toFixed(2)}%`;
 
         document.getElementById('rango-4-3').style.display = "flex";
-        document.getElementById('color-4-3').style.background = responseQuestion3 === 'C' ? "red" : "gray";
+        document.getElementById('color-4-3').style.background = responseQuestion3 === 'C' ? "#f5a11b" : "#80808075";
         document.getElementById('color-4-3').style.width = `${data.data.c.toFixed(2)}%`;
         document.getElementById('texto-4-3').innerText = `${data.data.c.toFixed(2)}%`;
 
@@ -321,10 +321,10 @@ document.getElementById('boton-1-4').addEventListener('click', () => {
     })
     .then(response => response.json())
     .then(data => {
-        document.getElementById('radio-buttom-b-4').style.background = "green";
-        document.getElementById('radio-buttom-d-4').style.background = responseQuestion4 === 'D' ? "red" : "gray";
-        document.getElementById('radio-buttom-a-4').style.background = responseQuestion4 === 'A' ? "red" : "gray";
-        document.getElementById('radio-buttom-c-4').style.background = responseQuestion4 === 'C' ? "red" : "gray";
+        document.getElementById('radio-buttom-b-4').style.background = "#1861ab";
+        document.getElementById('radio-buttom-d-4').style.background = responseQuestion4 === 'D' ? "#f5a11b" : "#80808075";
+        document.getElementById('radio-buttom-a-4').style.background = responseQuestion4 === 'A' ? "#f5a11b" : "#80808075";
+        document.getElementById('radio-buttom-c-4').style.background = responseQuestion4 === 'C' ? "#f5a11b" : "#80808075";
 
         document.getElementById('success-1-4').style.display = "block";
         document.getElementById('error-1-4').style.display = "block";
@@ -332,22 +332,22 @@ document.getElementById('boton-1-4').addEventListener('click', () => {
         document.getElementById('error-3-4').style.display = "block";
 
         document.getElementById('rango-1-4').style.display = "flex";
-        document.getElementById('color-1-4').style.background = "green";
+        document.getElementById('color-1-4').style.background = "#1861ab";
         document.getElementById('color-1-4').style.width = `${data.data.b.toFixed(2)}%`;
         document.getElementById('texto-1-4').innerText = `${data.data.b.toFixed(2)}%`;
 
         document.getElementById('rango-2-4').style.display = "flex";
-        document.getElementById('color-2-4').style.background = responseQuestion4 === 'D' ? "red" : "gray";
+        document.getElementById('color-2-4').style.background = responseQuestion4 === 'D' ? "#f5a11b" : "#80808075";
         document.getElementById('color-2-4').style.width = `${data.data.d.toFixed(2)}%`;
         document.getElementById('texto-2-4').innerText = `${data.data.d.toFixed(2)}%`;
 
         document.getElementById('rango-3-4').style.display = "flex";
-        document.getElementById('color-3-4').style.background = responseQuestion4 === 'A' ? "red" : "gray";
+        document.getElementById('color-3-4').style.background = responseQuestion4 === 'A' ? "#f5a11b" : "#80808075";
         document.getElementById('color-3-4').style.width = `${data.data.a.toFixed(2)}%`;
         document.getElementById('texto-3-4').innerText = `${data.data.a.toFixed(2)}%`;
 
         document.getElementById('rango-4-4').style.display = "flex";
-        document.getElementById('color-4-4').style.background = responseQuestion4 === 'C' ? "red" : "gray";
+        document.getElementById('color-4-4').style.background = responseQuestion4 === 'C' ? "#f5a11b" : "#80808075";
         document.getElementById('color-4-4').style.width = `${data.data.c.toFixed(2)}%`;
         document.getElementById('texto-4-4').innerText = `${data.data.c.toFixed(2)}%`;
 
